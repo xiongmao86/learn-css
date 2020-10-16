@@ -23,4 +23,7 @@
     > padding的格式是`padding: 上下 左右`，把a元素的padding误解成
     设左右了。
 
-- 仅仅设置`display: flex`会造成什么影响？
+- [ ] 仅仅设置`display: flex`会造成什么影响？
+
+- 为什么img不显示？
+    > 把`src`写成`href`。
