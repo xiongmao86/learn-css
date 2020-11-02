@@ -15,7 +15,7 @@
                 width: 1000px;
                 background-color: white;
                 display: flex;
-                /* align-items: center; */
+                align-items: center;
                 box-shadow: 0 1px 3px rgba(18,18,18,.1);
             }
             .nav-link {
@@ -67,27 +67,37 @@
                 align-items: center;
                 
             }
-            /* TODO */
-            /* .search-input {
-                flex: 1;
+            .search-input {
+                color: #121212;
+                flex-grow: 1;
                 background: transparent;
                 height: 24px;
+                
                 border: none;
                 padding-left: 12px;
-            }
-            .magnifier-button {
-                padding: 0 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
             .button-image {
                 width: 18px;
                 height: 18px;
             }
-            .input-wrapper {
+            .magnifier-link {
+                display: flex;
+                align-items: center;
+                padding: 7px 0;
+            }
+            .button-wrapper {
                 border-width: 1px;
                 margin-left: 12px;
+                line-height: 32px;
+                padding: 0 12px;
+                border-color: transparent;
+                background-color: transparent;
+            }
+            /* TODO */
+            /* .user-info {
+                flex-shrink: 0;
+                width: 296px;
+
             } */
         </style>
     </head>
@@ -129,10 +139,14 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- TODO -->
-                <!-- <div class="search-bar">
-                    <input class="search-input" placeholder="乐队的夏天总决赛" type="text">
-                    <button class="input-wrapper"><a class="magnifier-button"><img class="button-image" src="magnifier.png" /></a></button>
+                <div class="search-bar">
+                    <input class="search-input" max-length="100" placeholder="乐队的夏天总决赛" type="text">
+                    <button class="button-wrapper"><a class="magnifier-link"><img class="button-image" src="magnifier.png" /></a></button>
+                </div>
+                <!-- <div class="user-info">
+                    <button class="notification"></button>
+                    <button class="private-message"></button>
+                    <button class="avatar"><img src="avatar.jpg"></button>
                 </div> -->
             </div>
         </div>
